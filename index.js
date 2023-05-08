@@ -190,11 +190,10 @@
 
 // const panier = ["poire", "pomme", "banane", "cerise", "legume"];
 
-// console.log(panier.includes("banane")); // JUSTE AVEC INCLUDE PAS BESOIN DE FUNCTION 
-
+// console.log(panier.includes("banane")); // JUSTE AVEC INCLUDE PAS BESOIN DE FUNCTION
 
 // function inMyPanier(monFruit) {
-    
+
 //   for (let fruit of panier) {
 //     if (fruit === monFruit) {
 //       return true;
@@ -205,6 +204,54 @@
 
 // console.log(inMyPanier("Banane"));
 
+/**************************************************************************************************************************/
+// BOUCLE FOR OF  (itérable = argument tableau string)
+
+// const str = "Je suis au comptoir";
+// const chaineSansEspaces = str.replace(/\s/g, "");
+
+// for (let index of chaineSansEspaces) {
+//   console.log(`voici chaque lettre separer: ${index}`);
+// }
 
 /**************************************************************************************************************************/
-// BOUCLE FOR OF 
+// BOUCLE FOR IN  (énumérable = object)
+
+// let monchat = {
+//   name: "luffy",
+//   race: "siamois",
+//   age: 14 + " ans",
+// };
+
+// for ( let index in monchat){
+//     console.log(`${monchat[index]} ---> ${index}`);
+//     console.log(`Mon chat s'apelle ${monchat.name} c'est un ${monchat.race} il a ${monchat.age} `);
+// }
+
+/**************************************************************************************************************************/
+// INDEXOF() FUNCTION QUI PERMET DE SAVOIR LA POSSITION DE NOTRE ELEMENT DANS UN TSRING OU TABLEAUX
+
+// const panier = ["poire", "pomme", "banane", "cerise", "legume"];
+
+// console.log(panier.indexOf("banane"));
+
+// SI L'éLEMNT N4EST PAS PRENSENT IL RENVERA -1
+
+/**************************************************************************************************************************/
+// FUNCTION EN UTILISANT LES PARAMETRE
+
+const str = "EJ suis un padawan !!";
+
+function isHear(str, lettre) {
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === lettre) {
+      return console.log(`Oui il y a un ${lettre}`);
+    }
+  }
+  return console.log(`Non il n'y a pas se ${lettre}`);
+}
+
+isHear(str, 's');
+
+
+/**************************************************************************************************************************/
